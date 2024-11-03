@@ -125,12 +125,12 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.text_fields, size: 24),
+                              Icon(Icons.face, size: 24),
                               SizedBox(width: 8),
-                              Text('Texto', style: TextStyle(fontSize: 16)),
+                              Text('Face ID', style: TextStyle(fontSize: 16)),
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios, size: 16),
+                          Switch(value: true, onChanged: (value) {}),
                         ],
                       ),
                       Divider(),
@@ -139,23 +139,9 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.text_fields, size: 24),
+                              Icon(Icons.lock, size: 24),
                               SizedBox(width: 8),
-                              Text('Texto', style: TextStyle(fontSize: 16)),
-                            ],
-                          ),
-                          Icon(Icons.arrow_forward_ios, size: 16),
-                        ],
-                      ),
-                      Divider(),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(Icons.text_fields, size: 24),
-                              SizedBox(width: 8),
-                              Text('Texto', style: TextStyle(fontSize: 16)),
+                              Text('PIN Code', style: TextStyle(fontSize: 16)),
                             ],
                           ),
                           Icon(Icons.arrow_forward_ios, size: 16),
