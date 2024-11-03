@@ -158,7 +158,7 @@ class ProfileScreen extends StatelessWidget {
                               Text('Logout', style: TextStyle(fontSize: 16, color: Colors.red)), // Texto en rojo
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios, size: 16),
+                          // Flecha eliminada
                         ],
                       ),
                     ],
