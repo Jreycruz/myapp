@@ -147,6 +147,20 @@ class ProfileScreen extends StatelessWidget {
                           Icon(Icons.arrow_forward_ios, size: 16),
                         ],
                       ),
+                      Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.logout, size: 24, color: Colors.red), // Ícono de logout en rojo
+                              SizedBox(width: 8),
+                              Text('Logout', style: TextStyle(fontSize: 16, color: Colors.red)), // Texto en rojo
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
+                      ),
                     ],
                   ),
                 ),
