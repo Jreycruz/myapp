@@ -30,12 +30,12 @@ class ProfileScreen extends StatelessWidget {
               ),
               SizedBox(height: 16),
               Text(
-                'Nombre de Usuario',
+                'Luis Cruz',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 8),
               Text(
-                'correo@ejemplo.com',
+                'kingluis123@gmail.com',
                 style: TextStyle(fontSize: 16, color: Colors.grey),
               ),
               SizedBox(height: 20),
@@ -153,12 +153,11 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.logout, size: 24, color: Colors.red), // Ícono de logout en rojo
+                              Icon(Icons.logout, size: 24, color: Colors.red),
                               SizedBox(width: 8),
-                              Text('Logout', style: TextStyle(fontSize: 16, color: Colors.red)), // Texto en rojo
+                              Text('Logout', style: TextStyle(fontSize: 16, color: Colors.red)),
                             ],
                           ),
-                          // Flecha eliminada
                         ],
                       ),
                     ],
