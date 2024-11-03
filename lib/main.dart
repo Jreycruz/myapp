@@ -40,32 +40,51 @@ class ProfileScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {
-                  // Acción para editar perfil
-                },
+                onPressed: () {},
                 child: Text('Editar Perfil'),
               ),
               SizedBox(height: 20),
-              Text(
-                'Inventories',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Inventories',
+                  style: TextStyle(fontSize: 14),
+                ),
               ),
               SizedBox(height: 10),
               Card(
                 elevation: 4,
-                color: Colors.blue[50],
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(
-                        '---------------------',
-                        style: TextStyle(fontSize: 16),
-                        textAlign: TextAlign.center,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.book, size: 24),
+                              SizedBox(width: 8),
+                              Text('My Stories', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
+                      ),
+                      Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.help, size: 24),
+                              SizedBox(width: 8),
+                              Text('Support', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
                       ),
                     ],
                   ),
