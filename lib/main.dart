@@ -111,7 +111,21 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              Icon(Icons.notifications, size: 24),
+                              SizedBox(width: 8),
+                              Text('Push notifications', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Switch(value: true, onChanged: (value) {}),
+                        ],
+                      ),
+                      Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.text_fields, size: 24),
                               SizedBox(width: 8),
                               Text('Texto', style: TextStyle(fontSize: 16)),
                             ],
@@ -125,7 +139,7 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              Icon(Icons.text_fields, size: 24),
                               SizedBox(width: 8),
                               Text('Texto', style: TextStyle(fontSize: 16)),
                             ],
@@ -139,21 +153,7 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
-                              SizedBox(width: 8),
-                              Text('Texto', style: TextStyle(fontSize: 16)),
-                            ],
-                          ),
-                          Icon(Icons.arrow_forward_ios, size: 16),
-                        ],
-                      ),
-                      Divider(),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              Icon(Icons.text_fields, size: 24),
                               SizedBox(width: 8),
                               Text('Texto', style: TextStyle(fontSize: 16)),
                             ],
