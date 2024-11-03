@@ -14,36 +14,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class ProfileScreen extends StatefulWidget {
-  @override
-  _ProfileScreenState createState() => _ProfileScreenState();
-}
-
-class _ProfileScreenState extends State<ProfileScreen> {
-  String username = 'Nombre de Usuario';
-  String email = 'correo@ejemplo.com';
-  bool isEditing = false;
-
-  final TextEditingController usernameController = TextEditingController();
-  final TextEditingController emailController = TextEditingController();
-
-  @override
-  void initState() {
-    super.initState();
-    usernameController.text = username;
-    emailController.text = email;
-  }
-
-  void toggleEditing() {
-    setState(() {
-      isEditing = !isEditing;
-      if (!isEditing) {
-        username = usernameController.text;
-        email = emailController.text;
-      }
-    });
-  }
-
+class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,36 +22,54 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               CircleAvatar(
                 radius: 50,
                 backgroundImage: NetworkImage('https://via.placeholder.com/150'),
               ),
               SizedBox(height: 16),
-              isEditing
-                  ? TextField(
-                      controller: usernameController,
-                      decoration: InputDecoration(labelText: 'Nombre de Usuario'),
-                    )
-                  : Text(
-                      username,
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                    ),
+              Text(
+                'Nombre de Usuario',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
               SizedBox(height: 8),
-              isEditing
-                  ? TextField(
-                      controller: emailController,
-                      decoration: InputDecoration(labelText: 'Correo Electrónico'),
-                    )
-                  : Text(
-                      email,
-                      style: TextStyle(fontSize: 16, color: Colors.grey),
-                    ),
+              Text(
+                'correo@ejemplo.com',
+                style: TextStyle(fontSize: 16, color: Colors.grey),
+              ),
               SizedBox(height: 20),
               ElevatedButton(
-                onPressed: toggleEditing,
-                child: Text(isEditing ? 'Guardar' : 'Editar Perfil'),
+                onPressed: () {
+                  // Acción para editar perfil
+                },
+                child: Text('Editar Perfil'),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'Inventories',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 10),
+              Card(
+                elevation: 4,
+                color: Colors.blue[50],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        '---------------------',
+                        style: TextStyle(fontSize: 16),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
