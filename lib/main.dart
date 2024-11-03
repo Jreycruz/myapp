@@ -90,6 +90,81 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 20),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Additional Options',
+                  style: TextStyle(fontSize: 14),
+                ),
+              ),
+              SizedBox(height: 10),
+              Card(
+                elevation: 4,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              SizedBox(width: 8),
+                              Text('Texto', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
+                      ),
+                      Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              SizedBox(width: 8),
+                              Text('Texto', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
+                      ),
+                      Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              SizedBox(width: 8),
+                              Text('Texto', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
+                      ),
+                      Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.text_fields, size: 24), // Icono para todos los elementos
+                              SizedBox(width: 8),
+                              Text('Texto', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios, size: 16),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
